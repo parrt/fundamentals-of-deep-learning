@@ -21,7 +21,27 @@
 \begin{document}
 
 \[
-y = {\bf w} {\bf x} + b = w_1 x_1 + w_2 x_2 + \ldots w_m x_m + b 
+y = w_1 x_1 + w_2 x_2 + \ldots w_m x_m + b = {\bf w}  {\bf x} + b\\
+\]
+
+\[
+y = w'  ({\bf w}  {\bf x}^T + b) + b' = w'  {\bf w}  {\bf x}^T + w'b + b' = {\bf w}'' {\bf x}^T + b''
+\]
+
+\[
+\sigma({\bf z})_i = \frac{e^{z_i}}{\sum_{j=1}^k e^{z_j}}
+\]
+
+\[
+\begin{array}{l}
+y^{[1]} = w_1^{[1]} x_1 + w_2^{[1]} x_2 + \ldots w_m^{[1]} x_m + b^{[1]} = {\bf w}^{[1]} {\bf x}^T + b^{[1]}\\
+y^{[2]} = w_2^{[2]} x_2 + w_2^{[2]} x_2 + \ldots w_m^{[2]} x_m + b^{[2]} = {\bf w}^{[2]} {\bf x}^T + b^{[2]}\\
+y^{[3]} = w_3^{[3]} x_3 + w_3^{[3]} x_3 + \ldots w_m^{[3]} x_m + b^{[3]} = {\bf w}^{[3]} {\bf x}^T + b^{[3]}\\
+\end{array}
+\]
+
+\[
+{\bf y} = W {\bf x}^T + {\bf b}
 \]
 
 \[
@@ -47,13 +67,13 @@ X
 \]
 
 \[
-{\bf y}_1
+y_1
 \]
 \[
-{\bf y}_2
+y_2
 \]
 \[
-{\bf y}_n
+y_n
 \]
 
 
