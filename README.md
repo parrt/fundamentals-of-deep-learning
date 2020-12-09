@@ -3,7 +3,7 @@ Course notes and notebooks to teach the fundamentals of how deep learning works;
 
 ## Slides
 
-At the start of the seminar, we will go through a crash course in machine learning and the basics of deep learning. See [Crash course slides](notebooks/lectures/crashcourse.pptx) ([PDF](notebooks/lectures/crashcourse.pdf)). Then, we'll jump immediately into lecture/lab using the notebooks in the next section.
+At the start of the seminar, we will go through a crash course in machine learning and the basics of deep learning. See [Crash course slides](lectures/crashcourse.pptx) ([PDF](lectures/crashcourse.pdf)). Then, we'll jump immediately into lecture/lab using the notebooks in the next section.
 
 ## Notebooks
 
