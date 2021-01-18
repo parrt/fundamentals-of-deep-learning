@@ -1,4 +1,4 @@
-# fundamentals-of-deep-learning
+# Fundamentals of Deep Learning
 Course notes and notebooks to teach the fundamentals of how deep learning works; uses PyTorch.
 
 ## Slides
