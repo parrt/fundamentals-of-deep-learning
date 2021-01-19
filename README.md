@@ -1,11 +1,20 @@
 # Fundamentals of Deep Learning
+
+Taught by [Terence Parr](https://explained.ai/) and [Yannet Interian](https://www.usfca.edu/faculty/yannet-interian).
+
 Course notes and notebooks to teach the fundamentals of how deep learning works; uses PyTorch.
+
+## Part One
+
+Lectures by [Terence Parr](https://explained.ai/) with video comments by [Yannet Interian](https://www.usfca.edu/faculty/yannet-interian).
 
 ## Slides
 
-At the start of the seminar, we will go through a crash course in machine learning and the basics of deep learning. See [Crash course slides (PDF)](lectures/crashcourse.pdf) or [Crash course slides (PPTX)](lectures/crashcourse.pptx). Then, we'll jump immediately into lecture/lab using the notebooks in the next section.
+At the start of the seminar, Terence will go through a crash course in machine learning and the basics of deep learning. See [Crash course slides (PDF)](lectures/crashcourse.pdf) or [Crash course slides (PPTX)](lectures/crashcourse.pptx). Then, we'll jump immediately into lecture/lab using the notebooks in the next section.
 
-## Notebooks
+The videos associated with the following notebooks are available here: [Youtube playlist](https://www.youtube.com/playlist?list=PLFCc_Fc116ikeol9CZcWWKqmrJljxhE4N). (The video and audio quality is lousy due to zoom compression, my editing, and recompression.)
+
+### Notebooks
 
 1. [intro-regression-training-cars.ipynb](notebooks/1.intro-regression-training-cars.ipynb)<br>Load toy cars data set and train regression models to predict miles per gallon (MPG) through a variety of techniques. We start out doing a brute force grid search of many different slope and intercept (m, b) model parameters, looking for the best fit. Then we manually compute partial derivatives of the loss function and perform gradient descent using plain numpy. We look at the effect on the loss function of normalizing numeric variables to have zero mean and standard deviation one. Finally, this notebook shows you how to use the autograd (auto differentiation) functionality of pytorch as a way to transition from numpy to pytorch training loops.
 2. [pytorch-nn-training-cars.ipynb](notebooks/2.pytorch-nn-training-cars.ipynb)<br>Once we can implement our own gradient descent using pytorch autograd and matrix algebra, it's time to graduate to using pytorch's built-in neural network module and the built-in optimizers (e.g., Adam). Next, we observe how a sequence of two linear models is effectively the same as a single linear model. After we add a nonlinearity, we see more sophisticated curve fitting. Then we see how a sequence of multiple linear units plus nonlinearities affects predictions. Finally, we see what happens if we give a model too much power: the regression curve over fits the training data.
@@ -17,3 +26,9 @@ At the start of the seminar, we will go through a crash course in machine learni
 8. [SGD-minibatch-mnist.ipynb](notebooks/8.SGD-minibatch-mnist.ipynb)<br>We have been doing batch gradient descent, meaning that we compute the loss on the complete training set as a means to update the parameters of the model. If we process the training data in chunks rather than a single batch, we call it mini-batch gradient descent, or more commonly stochastic gradient descent (SGD). It is called stochastic because of the imprecision and, hence, randomness introduced by the computation of gradients on a subset of the training data. We tend to get better generalization with SGD; i.e., smaller validation loss.
 9. [data-loaders.ipynb](notebooks/9.data-loaders.ipynb) (optional)<br>PyTorch has support to manage data sets and deal with all of the minibatching. Basically, we will pass in `TensorDataset(X_train, y_train)` and `TensorDataset(X_test, y_test)` instead of `X_train, y_train, X_test, y_test` to our training loop. Then, our loop can iterate through batches using
 `(batch_X, batch_y) in train_loader`.
+
+## Part Two
+
+The second part of the course is taught by [Yannet Interian](https://www.usfca.edu/faculty/yannet-interian).
+
+### Notebooks
