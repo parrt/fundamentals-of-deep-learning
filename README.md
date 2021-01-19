@@ -2,7 +2,9 @@
 
 Taught by [Terence Parr](https://explained.ai/) and [Yannet Interian](https://www.usfca.edu/faculty/yannet-interian).
 
-Course notes and notebooks to teach the fundamentals of how deep learning works; uses PyTorch.
+This course teaches the fundamentals of deep learning, starting with a crash course in supervised learning and an overview of neural network architecture. After the "chalk talk" overview, the remainder of the course walks through a number of notebooks that you can use as templates to get started on your own applications. We use PyTorch for implementation examples.
+
+**Prerequisites**. We assume a familiarity with linear and logistic regression and the basic mathematics of line fitting.  The target audience of this course is [MS data science students at the University of San Francisco](https://www.usfca.edu/arts-sciences/graduate-programs/data-science) after they have completed about one semester of work.
 
 ## Part One
 
